@@ -1,0 +1,70 @@
+/*scroll event use .anime */
+
+/* title split into span, animated by anime.js  */
+.title span{
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes fadeInUp{
+    from {
+        opacity: 0;
+        transform:translateY(3rem);
+    }
+    to {
+        opacity: 1;
+        transform:translateY(0);
+  }
+}
+
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+  }
+}
+
+.about-text p.anime{
+    animation: fadeInUp 1s ease-in ;
+}
+
+.origin li.anime{
+    animation: fadeInUp 1s ease-in;
+}
+
+/* .detail-image.active{
+    animation: fadeIn 1s ease-in;
+} */
+
+
+
+.menu-wrapper.anime{
+    animation: fadeInUp 1s ease-in;
+}
+
+.moving-line{
+    
+    content: "";
+    width: 0;
+    margin-left: 3.25rem;
+    height: 1px;
+    background-color: #2D2D2D;
+    transition: width 1.6s ease-in 0.2s;
+}
+.moving-line.anime{
+    width: calc(100% - 3.25rem);
+}
+
+@media (max-width:480px){
+    .moving-line.anime{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.blog-wrapper.anime{
+    animation: fadeInUp 1s ease-in;
+}
